@@ -1,10 +1,15 @@
 /* Imports */
 
+import { getGames } from './fetch-utils.js';
+
 /* Get DOM Elements */
 
 /* State */
 
 /* Events */
+window.addEventListener('load', async () => {
+    await getGames();
+});
 
 /* Display Functions */
 
