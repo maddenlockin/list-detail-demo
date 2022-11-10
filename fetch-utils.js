@@ -4,8 +4,8 @@ const SUPABASE_KEY =
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-export async function getGames() {
+export async function getAllGames() {
     const response = await client.from('games').select();
     console.log('response', response);
-    return response;
+    return response.data;
 }
