@@ -10,10 +10,8 @@ const gamesContainer = document.querySelector('#games-container');
 /* Events */
 window.addEventListener('load', async () => {
     const games = await getAllGames();
-    console.log('games', games);
     for (let game of games) {
         const gameEl = renderGameCard(game);
-        console.log('gameEl', gameEl);
         gamesContainer.append(gameEl);
     }
 });
