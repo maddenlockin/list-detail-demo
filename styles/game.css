@@ -99,19 +99,6 @@ p {
     width: 600px;
 }
 
-.game-detail .name {
-    font-size: 2rem;
-}
-
-.game-detail .age-and-breed {
-    height: 50px;
-    width: 100%;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .game-detail img {
     margin: 40px;
     width: 80%;
@@ -121,4 +108,10 @@ p {
     font-size: 1.2rem;
     margin: 20px;
     padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
