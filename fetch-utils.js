@@ -12,6 +12,5 @@ export async function getAllGames() {
 
 export async function getGame(id) {
     const response = await client.from('games').select().match({ id: id }).single();
-    console.log('response.data', response.data);
     return response.data;
 }
